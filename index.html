@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Order</title>
+</head>
+
+<body class="adaptive">
+    <h1 class="item__title">Оформление заказа</h1>
+    <div class="block">
+        <div class="block__item_big item">
+            <div class="item_nav">
+                <div class="nav new-buyer active" id="newBuyer"><span>Я новый покупатель</span></div>
+                <div class="nav reg-buyer" id="regBuyer"><span>Я зарегистрированный<br> покупатель</span></div>
+            </div>
+            <div class="item__content">
+                <div class="box box__info-main">
+                    <h4>Получатель заказа</h4>
+                    <div class="input_item info-name">
+                        <span>Имя и фамилия</span>
+                        <input type="text">
+                    </div>
+                    <div class="input_item info-phone">
+                        <span>Телефон</span>
+                        <input type="text">
+                    </div>
+                    <div class="input_item info-city">
+                        <span>Город</span>
+                        <input type="text" placeholder="Киев">
+                    </div>
+                    <div class="input_item info-email">
+                        <span>Эл. почта</span>
+                        <input type="text" placeholder="user@email.com">
+                    </div>
+                    <div class="input_item info-commentary">
+
+                        <a href="" id="toComment">Добавить комментарий к заказу</a>
+
+                        <textarea name="commentary" id="commentArea"></textarea>
+                    </div>
+
+
+                </div>
+                <div class="box box__info-delivery">
+                    <div class="input_item info-delivery">
+                        <h4>Доставка</h4>
+                        <select name="type" id="typeOfDelivery">
+                            <option value="novaPoshta">"Новая почта" - 25 грн.</option>
+                            <option value="ukrPoshta">"УкрПошта" - 500 грн., но скажут: "Спасибо"</option>
+                        </select>
+                    </div>
+                    <div class="input_item info-email">
+                        <span>Адрес склада</span>
+                        <select name="adress" id="adressStock">
+                                <option value="main">Львов, Отделение №8 (до 30 кг): ул. Гетьмана И. Мазепы, 37</option>
+                                <option value="secondary">Бостон, отделение №2 (до 0.01 кг): вооон там</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box box__info-payment">
+                    <h4>Оплата</h4>
+                    <select name="payment" id="selectPayment">
+                        <option value="cash">наличные</option>
+                        <option value="cod">наложенный платёж</option>
+                    </select>
+                </div>
+                <div class="box box__info-checkout">
+                    <div class="input_item button-checkout">
+                        <button>Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item_content-for-reg-user hide"><span>Я зарегистрированный пользователь</span></div>
+        </div>
+        <div class="block__item_small item">
+            <h4 class="box_order box_title-order">Ваш заказ</h4>
+            <div class="box_order">
+                <img src="./assets/images/Layer-72.png" alt="photo">
+                <div class="about-all-items">
+                    <span class="about-item">MP3-плеер Apple iPod Touch 5Gen 32Gb blue</span>
+                    <span class="item-price">3 689 грн. × 1 шт.</span>
+                    <span class="price_absolute">3 689 грн.</span>
+                </div>
+            </div>
+            <div class="box_order">
+                <img src="./assets/images/Layer-71.png" alt="phone">
+                <div class="about-all-items">
+                    <span class="about-item">MP3-плеер Apple iPod Touch 5Gen 32Gb blue</span>
+                    <span class="item-price">3 689 грн. × 1 шт.</span>
+                    <span class="price_absolute">3 689 грн.</span>
+                </div>
+            </div>
+            <div class="box_order price-sum">
+                <span>9 769,15 грн.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
