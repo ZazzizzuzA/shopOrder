@@ -18,8 +18,10 @@ body {
     display: flex;
     height: 500px;
     @include border(1px, 1px, 0px, 1px, solid, $border);
+    @include padding(0px, 10px);
     font-size: 3em;
     font-weight: 600;
+    box-sizing: border-box;
     span {
         margin: auto;
         text-align: center;
@@ -55,6 +57,7 @@ body {
             .box__info-main {
                 display: flex;
                 flex-flow: column wrap;
+                padding-bottom: 0;
                 h4 {
                     width: 100%;
                     padding-bottom: 10px;
@@ -66,18 +69,27 @@ body {
                         height: 22px;
                         padding-left: 25%;
                     }
-                    textarea {
-                        resize: none;
-                        align-self: center;
-                        width: 50%;
-                        flex-wrap: nowrap;
-                        height: 0px;
-                        opacity: 0;
-                        transition: all 500ms ease-out;
+                    a:hover {
+                        text-decoration: none;
                     }
-                    .activeComment {
-                        height: 100px;
-                        opacity: 1;
+                    a:active {
+                        text-decoration: none;
+                        opacity: 0.4;
+                    }
+                    .info_comment-text {
+                        padding: 0;
+                        textarea {
+                            resize: none;
+                            width: 50%;
+                            flex-wrap: nowrap;
+                            height: 0px;
+                            opacity: 0;
+                            transition: all 500ms ease-out;
+                        }
+                        .activeComment {
+                            height: 100px;
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -149,6 +161,11 @@ body {
                     border-bottom: 1px dotted rgb(32, 115, 179);
                 }
             }
+            .nav:hover {
+                span {
+                    border: 0;
+                }
+            }
             .active {
                 background: rgb(255, 255, 255);
                 color: #000;
@@ -189,20 +206,23 @@ body {
                 }
                 .item-price {
                     color: rgb(150, 150, 150);
+                    opacity: 0;
                 }
                 .price_absolute {
                     position: absolute;
                     bottom: 15px;
                     right: 20px;
                     font-weight: 600;
-                    opacity: 0;
                 }
             }
         }
         .box_order:not(:nth-child(3n+1)):hover {
             background-color: rgb(190, 190, 190);
-            .price_absolute {
+            .item-price {
                 opacity: 1;
+            }
+            .about-item {
+                border: 0;
             }
         }
         .price-sum {

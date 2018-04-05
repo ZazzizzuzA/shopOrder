@@ -37,11 +37,11 @@
                     <div class="input_item info-commentary">
 
                         <a href="" id="toComment">Добавить комментарий к заказу</a>
-
-                        <textarea name="commentary" id="commentArea"></textarea>
+                        <div class="input_item info_comment-text">
+                            <span id="commentOnly">Комментарий</span>
+                            <textarea name="commentary" id="commentArea" disabled></textarea>
+                        </div>
                     </div>
-
-
                 </div>
                 <div class="box box__info-delivery">
                     <div class="input_item info-delivery">
@@ -80,20 +80,20 @@
                 <img src="./assets/images/Layer-72.png" alt="photo">
                 <div class="about-all-items">
                     <span class="about-item">MP3-плеер Apple iPod Touch 5Gen 32Gb blue</span>
-                    <span class="item-price">3 689 грн. × 1 шт.</span>
-                    <span class="price_absolute">3 689 грн.</span>
+                    <span class="item-price">6568 грн. × 1 шт.</span>
+                    <span class="price_absolute">6568 грн.</span>
                 </div>
             </div>
             <div class="box_order">
                 <img src="./assets/images/Layer-71.png" alt="phone">
                 <div class="about-all-items">
                     <span class="about-item">MP3-плеер Apple iPod Touch 5Gen 32Gb blue</span>
-                    <span class="item-price">3 689 грн. × 1 шт.</span>
-                    <span class="price_absolute">3 689 грн.</span>
+                    <span class="item-price">3689 грн. × 1 шт.</span>
+                    <span class="price_absolute">3689 грн.</span>
                 </div>
             </div>
             <div class="box_order price-sum">
-                <span>9 769,15 грн.</span>
+                <span id="sumOfOrder"></span>
             </div>
 
         </div>
